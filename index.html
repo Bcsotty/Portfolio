@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/pfp.png" alt="Brett csotty" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Brett Csotty">Brett Csotty</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:brett.csotty@gmail.com" class="contact-link">brett.csotty@gmail.com</a>
+            </div>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2002-10-15">October 15, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Canton, Michigan, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/brett-csotty" target="_blank" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Bcsotty" target="_blank" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a software engineer born and raised in Michigan and I have experience working on both frontend and backend
+            development.
+            I enjoy working on challenging problems to help grow and build my skill set.
+          </p>
+
+          <p>
+            I graduated from University of Michigan-Dearborn in 2024 with a degree in Computer Science with a focus of Information Systems.
+            I had also taken several Cybersecurity classes to increase my breadth of knowledge of computing systems.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Programming</h4>
+
+                <p class="service-item-text">
+                  Developing various projects such as websites and applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+                <div class="service-icon-box">
+                  <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Working</h4>
+  
+                  <p class="service-item-text">
+                    I am a SaaS Test Automation Engineer at Ford Motor Company.
+                  </p>
+                </div>
+  
+              </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Michigan Dearborn</h4>
+
+              <span>2020 - 2024</span>
+
+              <p class="timeline-text">
+                I graduated from University of Michigan-Dearborn with a degree in Computer Science in April 2024.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Ford Motor Company - SaaS Test Automation Engineer FCG</h4>
+  
+                <span>June 2024 — Present</span>
+  
+                <p class="timeline-text">
+                  I worked in Enterprise Technology on the Timekeeping Modernization team. I work with many colleagues to help Ford Motor Company to
+                  deliver improvements to their Timekeeping systems for their manufacturing plants. I am primarily responsible for coming up with testing
+                  innovations to help automate and find efficiencies in the testing of the timekeeping system. 
+                </p>
+  
+              </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ford Motor Company - Software Engineer Intern</h4>
+
+              <span>May 2023 — July 2023</span>
+
+              <p class="timeline-text">
+                I worked in Global Data Insights and Analytics both individually and on a team to complete several projects including a dashboard and a website.
+                I learned several skills such as Typescript and the Google Cloud Platform. I also gained experience working with a team to deliver a product by
+                a deadline and presenting my work to management.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Experimax Canton - Repair Technician</h4>
+
+              <span>October 2018 — January 2023</span>
+
+              <p class="timeline-text">
+                I worked as the main repair technician where I would perform repairs on various devices such as iPhones, computers, consoles and more. Additionally,
+                I trained new technicians on how to perform the repairs and daily procedures. Outside of repairs, I also handled customer interactions such as
+                buying or selling their devices.
+              </p>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5  pill">Python</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5  pill">Typescript</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5  pill">Google Cloud Platform</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5  pill">Microsoft Office</h5>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5  pill">Tricentis Tosca</h5>
+                </div>
+  
+            </li>
+
+            <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5  pill">Fast Learner</h5>
+                </div>
+  
+            </li>
+
+            <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5  pill">Strong Work Ethic</h5>
+                </div>
+  
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="application">
+              <a href="https://github.com/Bcsotty/HexagonalChess" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/hex-chess.png" alt="hexagonal chess" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Hexagonal Chess</h3>
+
+                <p class="project-category">A Python chess game</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="application">
+              <a href="https://github.com/Bcsotty/DesertBus" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/desert-bus.png" alt="desert bus" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Desert Bus</h3>
+
+                <p class="project-category">Simple computer vision program</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
